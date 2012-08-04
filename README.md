@@ -1,7 +1,7 @@
-Integrated Human Resource Management Information System.
+Business Permit and Licensing System.
 =============
 
-Attendance monitoring, Leave administration, Personnel Management, Payroll, Recruitment, Performance Management and more..
+Business Permit and Licensing System..
 
 Markups
 -------
@@ -22,7 +22,7 @@ Installation
 
 Bugs & Feature Requests
 -----------
-[Issue tracker](https://github.com/mannysoft/ihrmis/issues)
+[Issue tracker](https://github.com/mannysoft/ibpls/issues)
 
 
 
