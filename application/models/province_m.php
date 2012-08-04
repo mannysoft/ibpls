@@ -5,8 +5,8 @@ class Province_m extends Datamapper
 	public $table = 'provinces';
 	public $order_by = ''; 
 	
-	function __construct()
+	function __construct($id = NULL)
 	{
-		parent::__construct();
+		parent::__construct($id);
 	}
 }

@@ -55,8 +55,7 @@ $autoload['libraries'] = array(
 						'database', 
 						'datamapper',
 						'session', 
-						'form_validation', 
-						//'version_control'
+						'form_validation',
 						);//activerecord
 
 
@@ -128,7 +127,7 @@ $autoload['language'] = array();
 
 $autoload['model'] = array(
 							'Migrations',
-							'User',
+							
 							//'User_group',
 							//'User_type',
 							'Settings',

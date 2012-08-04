@@ -17,9 +17,9 @@
         <th width="26%" scope="col">BLGF</th>
         <th width="20%" scope="col"><strong>Action</strong></th>
   </tr>
-	   <?php $l = new Lgu_m();?>
+	   <?php $l = new District_m();?>
 	  <?php foreach($barangays as $row):?>
-      		<?php $l->get_by_id($row->lgu_id);?>				
+      		<?php $l->get_by_id($row->district_id);?>				
 		<?php $bg = $this->Settings->set_line_colors();?>
         <tr bgcolor="<?php echo $bg;?>" onmouseover="this.bgColor = '<?php echo $this->config->item('mouseover_linecolor')?>';" 
     onmouseout ="this.bgColor = '<?php echo $bg;?>';">

@@ -40,9 +40,9 @@ class User_m extends Datamapper{
 	 *
 	 * @return User
 	 */
-	function __construct()
+	function __construct($id = NULL)
 	{
-		parent::__construct();
+		parent::__construct($id);
 		
 	}
 	

@@ -4,9 +4,9 @@ class Zone_m extends Datamapper
 {
 	public $table = 'zone';
 	
-	function __construct()
+	function __construct($id = NULL)
 	{
-		parent::__construct();
+		parent::__construct($id);
 	}
 
 }

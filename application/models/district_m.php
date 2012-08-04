@@ -4,9 +4,9 @@ class District_m extends Datamapper
 {
 	public $table = 'districts';
 	
-	function __construct()
+	function __construct($id = NULL)
 	{
-		parent::__construct();
+		parent::__construct($id);
 	}
 		
 	function get_district($district_id = '')

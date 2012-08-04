@@ -4,9 +4,9 @@ class Lgu_m extends Datamapper
 {
 	public $table = 'lgu';
 	
-	function __construct()
+	function __construct($id = NULL)
 	{
-		parent::__construct();
+		parent::__construct($id);
 	}
 		
 	function get_lgu($lgu_id = '')

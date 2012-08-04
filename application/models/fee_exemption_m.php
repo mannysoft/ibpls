@@ -1,12 +1,12 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-
-class Barangay_m extends Datamapper
+//
+class Fee_exemption_m extends Datamapper
 {
-	public $table = 'barangay';
+	public $table = 'fee_exemptions';
 	
 	function __construct($id = NULL)
 	{
 		parent::__construct($id);
 	}
-	
+
 }

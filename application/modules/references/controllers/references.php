@@ -11,8 +11,16 @@ class References extends MX_Controller {
 		$this->output->enable_profiler(TRUE);
 		
 		$this->load->helper(array('form', 'url'));
-		$this->load->library('form_validation');
     }  
+	
+	function index()
+	{
+		$data['page_name'] = '<b>References</b>';
+		
+		$data['main_content'] = 'index';
+		
+		$this->load->view('includes/template', $data);
+	}
 	
 	// --------------------------------------------------------------------
 		
@@ -21,9 +29,7 @@ class References extends MX_Controller {
 		$data['page_name'] = '<b>Province</b>';
 		
 		$data['msg'] = '';
-		
-		$op = $this->input->post('op');
-		
+				
 		$p = new Province_m();
 		
 		$data['provinces'] = $p->get();
@@ -127,7 +133,6 @@ class References extends MX_Controller {
 		if ($this->input->post('op') == 1)
 		{									
 			$this->form_validation->set_rules('name', 'District Name', 'required');
-			//$this->form_validation->set_rules('blgf_code', 'BLGF Code', 'required');
 			
 			if ($this->form_validation->run() == TRUE)
 			{
