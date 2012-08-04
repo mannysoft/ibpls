@@ -490,6 +490,58 @@ class References extends MX_Controller {
 		redirect(base_url().'references/zone', 'refresh');
 	}
 	
+	// --------------------------------------------------------------------
+		
+	function ctc()
+	{
+		$data['page_name'] = '<b>CTC Settings</b>';
+		
+		$data['msg'] = '';
+		
+		$c = new Ctc_interest_m();
+		
+		if ($this->input->post('op') == 1)
+		{									
+			$this->form_validation->set_rules('individual_interest_rate', 'Individual Interest Rate', 'required|max_length[30]');
+			$this->form_validation->set_rules('corporate_interest_rate', 'Corporate Interest Rate', 'required|max_length[30]');
+			$this->form_validation->set_rules('individual_ceiling_rate', 'Individual Ceiling Rate', 'required|max_length[30]');
+			$this->form_validation->set_rules('corporate_ceiling_rate', 'Corporate Ceiling Rate', 'required|max_length[30]');
+
+			if ($this->form_validation->run() == TRUE)
+			{
+				$c->get_by_type('Individual');
+				
+				$c->interest_rate 	= $this->input->post('individual_interest_rate');
+				$c->ceiling_rate 	= $this->input->post('individual_ceiling_rate');
+				$c->save();
+				
+				$c = new Ctc_interest_m();
+				
+				$c->get_by_type('Corporate');
+				
+				$c->interest_rate 	= $this->input->post('corporate_interest_rate');
+				$c->ceiling_rate 	= $this->input->post('corporate_ceiling_rate');
+				$c->save();
+				
+				$data['msg'] = 'Saved!';
+				
+			}
+		}
+		
+		$c = new Ctc_interest_m();
+		
+		$data['individual'] = $c->get_by_type('Individual');
+		
+		$c = new Ctc_interest_m();
+		
+		$data['corporate'] 	= $c->get_by_type('Corporate');
+						
+		$data['main_content'] = 'ctc';
+		
+		$this->load->view('includes/template', $data);
+
+	}
+	
 	
 }
 

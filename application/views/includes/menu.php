@@ -44,17 +44,17 @@ $settings_management =  array(
 <li class="menu_close" onMouseOver="adminOpenMenu(this, 'menu_open');" onMouseOut="adminCloseMenu(this, 'menu_close');"><a class="first_line" href="<?php echo base_url();?>references"><img src="<?php echo base_url();?>/images/configuration_config.png" alt=".:" width="22" height="22" class="little_icon"><br>
   Settings</a><ul class="list_modules"><li><a href="<?php echo base_url();?>references/province"><img class="menu_icon" src="<?php echo base_url();?>/images/blank.gif" alt=".:">Province</a></li>
   
-  <li><a href="<?php echo base_url();?>references/district"><img class="menu_icon" src="<?php echo base_url();?>/images/blank.gif" alt=".:">District</a></li>
+  <!--<li><a href="<?php echo base_url();?>references/district"><img class="menu_icon" src="<?php echo base_url();?>/images/blank.gif" alt=".:">District</a></li>-->
   
   <li><a href="<?php echo base_url();?>references/lgu"><img class="menu_icon" src="<?php echo base_url();?>/images/blank.gif" alt=".:">LGU</a></li>
   
-  <li><a href="<?php echo base_url();?>references/zip"><img class="menu_icon" src="<?php echo base_url();?>/images/blank.gif" alt=".:">Zip</a></li>
+  <!--<li><a href="<?php echo base_url();?>references/zip"><img class="menu_icon" src="<?php echo base_url();?>/images/blank.gif" alt=".:">Zip</a></li>-->
   
   
   <li><a href="<?php echo base_url();?>references/barangay"><img class="menu_icon" src="<?php echo base_url();?>/images/blank.gif" alt=".:">Barangay</a></li>
   
   
-  <li><a href="<?php echo base_url();?>references/zone"><img class="menu_icon" src="<?php echo base_url();?>/images/blank.gif" alt=".:">Zone</a></li>
+  <!--<li><a href="<?php echo base_url();?>references/zone"><img class="menu_icon" src="<?php echo base_url();?>/images/blank.gif" alt=".:">Zone</a></li>-->
   
   
   
@@ -86,8 +86,8 @@ $settings_management =  array(
   <li><a href="<?php echo base_url();?>chart_accounts"><img class="menu_icon" src="<?php echo base_url();?>/images/blank.gif" alt=".:">Chart Of Accounts</a></li>
   <li><a href="<?php echo base_url();?>requirements"><img class="menu_icon" src="<?php echo base_url();?>/images/blank.gif" alt=".:">Requirements</a></li>
   <li><a href="<?php echo base_url();?>ownership"><img class="menu_icon" src="<?php echo base_url();?>/images/blank.gif" alt=".:">Ownership Type</a></li>
-  <li><a href="<?php echo base_url();?>references/barangay"><img class="menu_icon" src="<?php echo base_url();?>/images/blank.gif" alt=".:">CTC Settings</a></li>
-  <li><a href="<?php echo base_url();?>references/barangay"><img class="menu_icon" src="<?php echo base_url();?>/images/blank.gif" alt=".:">Occupancy Type</a></li>
+  <li><a href="<?php echo base_url();?>references/ctc"><img class="menu_icon" src="<?php echo base_url();?>/images/blank.gif" alt=".:">CTC Settings</a></li>
+  <!--<li><a href="<?php echo base_url();?>references/barangay"><img class="menu_icon" src="<?php echo base_url();?>/images/blank.gif" alt=".:">Occupancy Type</a></li>-->
   <li><a href="<?php echo base_url();?>references/barangay"><img class="menu_icon" src="<?php echo base_url();?>/images/blank.gif" alt=".:">Industry Sector</a></li>
   <li><a href="<?php echo base_url();?>references/barangay"><img class="menu_icon" src="<?php echo base_url();?>/images/blank.gif" alt=".:">Citizenship</a></li>
   <li><a href="<?php echo base_url();?>references/barangay"><img class="menu_icon" src="<?php echo base_url();?>/images/blank.gif" alt=".:">Economic Area</a></li>
