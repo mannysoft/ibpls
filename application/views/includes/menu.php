@@ -93,8 +93,8 @@ $settings_management =  array(
   <li><a href="<?php echo base_url();?>references/economic_area"><img class="menu_icon" src="<?php echo base_url();?>/images/blank.gif" alt=".:">Economic Area</a></li>
   <li><a href="<?php echo base_url();?>references/economic_org"><img class="menu_icon" src="<?php echo base_url();?>/images/blank.gif" alt=".:">Economic Organization</a></li>
   <li><a href="<?php echo base_url();?>references/permit_format"><img class="menu_icon" src="<?php echo base_url();?>/images/blank.gif" alt=".:">Permit Number Format</a></li>
-  <li><a href="<?php echo base_url();?>references/barangay"><img class="menu_icon" src="<?php echo base_url();?>/images/blank.gif" alt=".:">Lot PIN</a></li>
-  <li><a href="<?php echo base_url();?>references/barangay"><img class="menu_icon" src="<?php echo base_url();?>/images/blank.gif" alt=".:">Announcements</a></li>
+  <li><a href="<?php echo base_url();?>references/#"><img class="menu_icon" src="<?php echo base_url();?>/images/blank.gif" alt=".:">Lot PIN</a></li>
+  <!--<li><a href="<?php echo base_url();?>references/barangay"><img class="menu_icon" src="<?php echo base_url();?>/images/blank.gif" alt=".:">Announcements</a></li>-->
   
   
   
